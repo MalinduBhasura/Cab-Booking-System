@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login1</title>
 </head>
 <body>
     <form method="POST" action="LoginServlet">
