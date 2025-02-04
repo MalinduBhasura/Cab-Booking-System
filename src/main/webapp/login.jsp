@@ -11,7 +11,10 @@
         <form action="login" method="post">
             <input type="text" name="username" placeholder="Username" required autocomplete="off">
             <input type="password" name="password" placeholder="Password" required autocomplete="new-password">
-            <input type="submit" value="login">
+            <div class="button-container">
+            <input type="submit" value="Login">
+            <input type="reset" value="Clear">
+            </div>
         </form>
         <a href="signup.jsp">Sign Up</a>
         <% if (request.getParameter("error") != null) { %>

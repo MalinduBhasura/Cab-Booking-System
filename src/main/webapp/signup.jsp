@@ -11,12 +11,15 @@
 <body>
     <div class="signup-container">
         <h2>Create an Account</h2>
-        <form action="signup" method="post">
-            <input type="text" name="username" placeholder="Username" required autocomplete="off"><br>
-            <input type="password" name="password" placeholder="Password" required autocomplete="new-password"><br>
-            <input type="email" name="email" placeholder="Email" required><br>
-            <input type="submit" value="Sign Up">
-        </form>
+     <form action="signup" method="post">
+    <input type="text" name="username" placeholder="Username" required autocomplete="off"><br>
+    <input type="password" name="password" placeholder="Password" required autocomplete="new-password"><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <div class="button-container">
+        <input type="submit" value="Sign Up">
+        <input type="reset" value="Clear">
+    </div>
+</form>
 
         <!-- Display Success or Error Messages -->
         <% if (request.getAttribute("successMessage") != null) { %>

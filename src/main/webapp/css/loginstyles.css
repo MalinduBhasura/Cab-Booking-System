@@ -43,20 +43,45 @@ input:focus {
     border-color: #74ebd5;  /* Change border color on focus */
 }
 
-input[type="submit"] {
-    background: #28a745;
-    color: white;
-    border: none;
-    border-radius: 6px;  /* Rounded submit button */
-    cursor: pointer;
-    padding: 12px 20px;
-    font-size: 18px;
-    transition: background 0.3s ease;
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Align buttons in the center */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px; /* Space between inputs and buttons */
 }
 
-input[type="submit"]:hover {
-    background: #218838;  /* Darker green on hover */
+/* General Button Styles */
+input[type="submit"], input[type="reset"] {
+    background: #28a745;  /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;  /* Set both buttons to occupy the same width */
 }
+
+/* Hover Effect for Both Buttons */
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+    transform: scale(1.05);
+}
+
+/* Reset Button */
+input[type="reset"] {
+    background: #dc3545;  /* Red background for reset */
+}
+
+/* Focus Effect for Both Buttons */
+input[type="submit"]:focus, input[type="reset"]:focus {
+    outline: none;
+    border: 2px solid #ff4b2b; /* Highlight button with red border */
+}
+
 
 a {
     display: block;
