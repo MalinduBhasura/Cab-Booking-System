@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);  /* Soft gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../img/cab_login.png"); /* Smaller background image */
+    background-size: contain;  /* Make the image fit without stretching */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the image */
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for a modern look */
+    padding: 40px 30px;  /* More padding for a spacious feel */
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Soft shadow for floating effect */
+    text-align: center;
+    width: 350px;  /* Slightly wider container */
+    backdrop-filter: blur(10px); /* Blur effect behind the form */
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;  /* Space between title and inputs */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;  /* Rounded input boxes */
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #74ebd5;  /* Change border color on focus */
+}
+
+input[type="submit"] {
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;  /* Rounded submit button */
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #218838;  /* Darker green on hover */
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+

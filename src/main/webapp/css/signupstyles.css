@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../img/signup.jpg");
+    background-size: 50%;  /* Adjust size to be smaller */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Signup Container */
+.signup-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    color: #ff5733;  /* Change to your preferred color */
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-left: 10px; /* Moves the button slightly to the right */
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+    transform: scale(1.05);
+}
+
+/* Success & Error Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.9;
+}
+
+/* Success Message */
+.alert.success {
+    background-color: rgba(40, 167, 69, 0.9);
+    color: #fff;
+}
+
+/* Error Message */
+.alert.error {
+    background-color: rgba(220, 53, 69, 0.9);
+    color: #fff;
+}
+
+/* Close Button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: yellow;
+}
+
+/* Link Styling */
+.redirect-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.redirect-link a {
+    color: #ff4b2b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.redirect-link a:hover {
+    text-decoration: underline;
+    color: #ff416c;
+}

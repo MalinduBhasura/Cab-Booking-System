@@ -3,17 +3,20 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/loginstyles.css">
 </head>
 <body>
-    <h2>Login</h2>
-    <form action="login" method="post">
-        Username: <input type="text" name="username" required><br>
-        Password: <input type="password" name="password" required><br>
-        <input type="submit" value="Login">
-    </form>
-    <a href="signup.jsp">Sign Up</a>
-    <% if (request.getParameter("error") != null) { %>
-        <p style="color:red;">Invalid username or password!</p>
-    <% } %>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login" method="post">
+            <input type="text" name="username" placeholder="Username" required autocomplete="off">
+            <input type="password" name="password" placeholder="Password" required autocomplete="new-password">
+            <input type="submit" value="login">
+        </form>
+        <a href="signup.jsp">Sign Up</a>
+        <% if (request.getParameter("error") != null) { %>
+            <p class="error-message">Invalid username or password!</p>
+        <% } %>
+    </div>
 </body>
 </html>
